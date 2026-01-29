@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BENNASR_SHOP♥♥</title>
+    <link rel="stylesheet" media="screen" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo-link">
+            <img src="logo.jpg" alt="BENNASR_SHOP Logo" class="logo">
+        </a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#" id="cart-link" style="position: relative;">
+                🛒 Cart <span id="cart-count"
+                    style="background-color: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px; vertical-align: top;">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Welcome to BENNASR_SHOP</h2>
+        <p>Your trusted online store for quality products</p>
+        <button onclick="location.href='form.html'">
+            sign in
+        </button>
+
+    </section>
+
+    <section class="container" id="products">
+        <div class="section-title">
+            <h2>Our Products</h2>
+            <p>Best quality at the best prices</p>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="ming3.jpg" alt="Product 1" />
+                <h3>TISSOT PRX</h3>
+
+                <p class="price">65TND</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="pat.jpg" alt="Product 2" />
+                <h3>PATEK PHILIPPE NAUTILUS</h3>
+                <p class="price">75TND</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="c1.jpg" alt="Product 2" />
+                <h3>PACK CASIO FOR COUPLE</h3>
+                <p class="price">110TND</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="c2.jpg" alt="Product 2" />
+                <h3>HUBLOT LUXURY</h3>
+
+                <p class="price">90TND</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="ming2.jpg" alt="Product 2" />
+                <h3>TISSOT PRX</h3>
+                <p class="price">65TND</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="ming1.jpg" alt="Product 3" />
+                <h3>TISSOT PRX</h3>
+                <p class="price">65TND</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="about">
+        <div class="about">
+            <h2>About BENNASR_SHOP</h2>
+            <p>
+                BENNASR_SHOP is a modern e‑commerce platform dedicated to providing
+                high‑quality products with excellent customer service. Our mission is
+                to offer a simple, secure, and enjoyable shopping experience for all
+                our customers.
+            </p>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: ademb3942@gmail.com</p>
+            <p>Phone: +216 58 750 459</p>
+            <p>Follow us on social media for updates and promotions.</p>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart" class="close-cart">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items will be injected here by JS -->
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">Total: <span id="cart-total">0TND</span></div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BENNASR_SHOP</h3>
+                <p>Luxury watches and accessories for the modern lifestyle.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe for latest updates and offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BENNASR_SHOP. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="shop.js"></script>
+</body>
+
+</html>

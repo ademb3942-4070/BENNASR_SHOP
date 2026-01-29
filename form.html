@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact BENNASR_SHOP</title>
+    <link rel="stylesheet" href="stylef.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-logo-container">
+            <img src="logo.jpg" alt="BENNASR_SHOP Logo">
+        </div>
+        <h2>Contact Us</h2>
+        <form action="connect.php" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="subject">Select Product</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a product...</option>
+                <option value="TISSOT PRX">TISSOT PRX</option>
+                <option value="PACK CASIO FOR COUPLE">PACK CASIO FOR COUPLE</option>
+                <option value="HUBLOT LUXURY">HUBLOT LUXURY</option>
+            </select>
+            <label for="subject">Password</label>
+            <input type="password" id="password" name="password" placeholder="write your password here" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script src="controle.js"></script>
+</body>
+
+</html>
